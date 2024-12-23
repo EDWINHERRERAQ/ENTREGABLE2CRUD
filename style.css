@@ -1,0 +1,173 @@
+/* Reset general para eliminar márgenes y padding predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6b73ff, #000dff);
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+/* Form Container */
+form {
+    margin-top: 1rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #333333;
+}
+
+/* Form Title */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #4a4a4a;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #555555;
+    text-align: left;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+    background-color: #e6f0ff;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4A90E2;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #4A90E2;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #357ABD;
+}
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+th, td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4A90E2;
+    color: white;
+}
+
+tr:hover {
+    background-color: #e20303;
+}
+
+/* Mensajes de respuesta */
+p#response {
+    font-size: 0.9rem;
+    color: #ff4d4d;
+    margin-top: 1rem;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    form {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
+/* Estilo para el enlace de cerrar sesión */
+a.logout {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a.logout:hover {
+    color: darkred;
+    transform: scale(1.1);
+}
